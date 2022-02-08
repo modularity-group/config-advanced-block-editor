@@ -1,22 +1,5 @@
 <?php defined("ABSPATH") or die;
 
-/* Reduce blocks */
-add_action("enqueue_block_editor_assets", "config_block_editor_reduce_blocks", 900);
-function config_block_editor_reduce_blocks(){
-
-  $module_basename = 'config-block-editor';
-  $module_directory_path = dirname( __FILE__ );
-  $module_directory_uri = strpos($module_directory_path,'/themes/') ? get_stylesheet_directory_uri().'/'.$module_basename : WP_CONTENT_URL.'/modules/'.$module_basename;
-
-  wp_enqueue_script(
-    "config-block-editor-reduce-blocks",
-    $module_directory_uri . "/config-block-editor-reduce-blocks.js",
-    array(),
-    filemtime($module_directory_path . "/config-block-editor-reduce-blocks.js"),
-    true
-  );
-}
-
 /* Block-Reusables*/
 add_action('registered_post_type', function($type, $args) {
   if ($type != 'wp_block') { return; }

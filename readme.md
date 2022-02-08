@@ -16,10 +16,6 @@ License: MIT
 
 Improves ability to work with blocks.
 
-**reduce**
-- Hide gutenberg blocks: file, search, more, pullquote, preformatted, code, nextpage, freeform, latest, calendar, rss, archives, verse and all embeds except youtube, vimeo.
-- diable this with `remove_action("enqueue_block_editor_assets", "config_block_editor_reduce_blocks");`
-
 **reusables**
 - shows **Block-Reusables** below **Appearance** Admin Menu
 - exposes functions `get_block_reusable($title)` and `the_block_reusable($title)` to get a reusable block in templates
@@ -29,6 +25,9 @@ Improves ability to work with blocks.
 - shows **Block-Patterns** below **Appearance** Admin Menu.
 
 ---
+
+1.3.0 (Matze)
+- remove reduce blocks script
 
 1.2.0 (Matze)
 - repair reduce blocks functionality with pluggable block_editor_asset script enqueue 
