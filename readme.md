@@ -6,7 +6,7 @@ Hide several standard blocks. Enable Block-Reusables and Block-Patterns interfac
 
 ---
 
-Version: 1.2.0
+Version: 2.0.0
 
 Author: Matze https://modularity.group
 
@@ -16,15 +16,21 @@ License: MIT
 
 Improves ability to work with blocks.
 
-**reusables**
+**Block Reusables Option**
 - shows **Block-Reusables** below **Appearance** Admin Menu
 - exposes functions `get_block_reusable($title)` and `the_block_reusable($title)` to get a reusable block in templates
 
-**patterns**
+**Block Pattern-Manager Option**
 - implements Admin UI to create and manage pattern-blocks that can be easily inserted in the block editor
 - shows **Block-Patterns** below **Appearance** Admin Menu.
 
+**Supported Blocks**
+- enable / disable supported blocks from all registered blocks globally
+
 ---
+
+2.0.0 (Matze)
+- refactored with Admin Page `Settings > Adv. Block-Editor` to enable disable features
 
 1.3.0 (Matze)
 - remove reduce blocks script
