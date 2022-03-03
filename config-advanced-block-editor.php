@@ -12,7 +12,7 @@ add_action('admin_menu',function(){
 });
 
 function config_advanced_block_editor_admin_page_callback() {
-  if($_POST['advanced-block-editor__update-settings']){
+  if(isset($_POST['advanced-block-editor__update-settings'])){
     if (isset($_POST['advanced-block-editor__block-reusables'])) {
       update_option('advanced-block-editor__block-reusables', $_POST['advanced-block-editor__block-reusables']);
     } else {

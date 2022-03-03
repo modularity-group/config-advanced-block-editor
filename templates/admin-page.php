@@ -68,9 +68,14 @@
     $registered_block_types = $block_registry->get_all_registered();
     $blocks_enabled = get_option('advanced-block-editor__blocks-enabled');
     foreach($block_registry->get_all_registered() as $registered_block){
+      if($blocks_enabled){
+        $block_checked = (in_array($registered_block->name,$blocks_enabled)) ? 'checked' : '';
+      } else {
+        $block_checked = "checked";
+      }
       ?>
       <li>
-        <input type="checkbox" name="advanced-block-editor__blocks[]" id="advanced-block-editor__<?= $registered_block->name ?>" value="<?= $registered_block->name ?>" <?php echo (in_array($registered_block->name,$blocks_enabled)) ? 'checked' : ''; ?>> <label for="advanced-block-editor__<?= $registered_block->name ?>"><?= $registered_block->name ?></label>
+        <input type="checkbox" name="advanced-block-editor__blocks[]" id="advanced-block-editor__<?= $registered_block->name ?>" value="<?= $registered_block->name ?>" <?= $block_checked ?>> <label for="advanced-block-editor__<?= $registered_block->name ?>"><?= $registered_block->name ?></label>
       </li>
       <?php
     }

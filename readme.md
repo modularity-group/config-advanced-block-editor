@@ -6,7 +6,7 @@ Hide several standard blocks. Enable Block-Reusables and Block-Patterns interfac
 
 ---
 
-Version: 2.0.0
+Version: 2.0.1
 
 Author: Matze https://modularity.group
 
@@ -28,6 +28,9 @@ Improves ability to work with blocks.
 - enable / disable supported blocks from all registered blocks globally
 
 ---
+
+2.0.1 (Matze)
+- fix admin page error on inital call
 
 2.0.0 (Matze)
 - refactored with Admin Page `Settings > Adv. Block-Editor` to enable disable features
