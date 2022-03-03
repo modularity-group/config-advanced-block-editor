@@ -1,4 +1,4 @@
-# config-block-editor
+# config-advanced-block-editor
 
 This module builds on WordPress and Modularity.
 
