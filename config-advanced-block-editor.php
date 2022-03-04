@@ -2,7 +2,7 @@
 
 add_action('admin_menu',function(){
   add_submenu_page(
-    'options-general.php',
+    'modularity',
     'Advanced Block-Editor',
     'Adv. Block-Editor',
     'manage_options',

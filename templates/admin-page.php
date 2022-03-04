@@ -12,6 +12,23 @@
 </style>
 
 <script>
+  var minimalBlocks = new Array(
+    'core/block',
+    'core/paragraph',
+    'core/heading',
+    'core/list',
+    'core/button',
+    'core/buttons',
+    'core/image',
+    'core/gallery',
+    'core/spacer',
+    'core/column',
+    'core/columns',
+    'core/cover',
+    'core/group',
+    'core/video',
+  );
+
   document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('blocks-select-all').onclick = function() {
       var checkboxes = document.querySelectorAll('.all-blocks-list input[type="checkbox"]');
@@ -23,6 +40,16 @@
       var checkboxes = document.querySelectorAll('.all-blocks-list input[type="checkbox"]');
       for (var checkbox of checkboxes) {
         checkbox.checked = false;
+      }
+    }
+    document.getElementById('blocks-select-minimal').onclick = function() {
+      var checkboxes = document.querySelectorAll('.all-blocks-list input[type="checkbox"]');
+      for (var checkbox of checkboxes) {
+        if(minimalBlocks.indexOf(checkbox.value) != -1 || checkbox.value.indexOf('core/') == -1){
+          checkbox.checked = true;
+        } else {
+          checkbox.checked = false;
+        }
       }
     }
   }, false);
@@ -61,7 +88,7 @@
 
     <h2>Supported Blocks</h2>
     <p>Disable all Blocks that the Theme is not supporting.</p>
-    <button type="button" id="blocks-select-all">Select all</button> <button type="button" id="blocks-select-none">Select none</button>
+    <button type="button" id="blocks-select-all">Select all</button> <button type="button" id="blocks-select-none">Select none</button> <button type="button" id="blocks-select-minimal">Select minimal</button>
     <ul class="all-blocks-list">
     <?php
     $block_registry = WP_Block_Type_Registry::get_instance();

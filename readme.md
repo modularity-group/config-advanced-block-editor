@@ -6,7 +6,7 @@ Hide several standard blocks. Enable Block-Reusables and Block-Patterns interfac
 
 ---
 
-Version: 2.0.1
+Version: 2.1.0
 
 Author: Matze https://modularity.group
 
@@ -28,6 +28,10 @@ Improves ability to work with blocks.
 - enable / disable supported blocks from all registered blocks globally
 
 ---
+
+2.1.0 (Matze)
+- new admin menu position below 'Modules'
+- new Select minimal preset for block-support selection 
 
 2.0.1 (Matze)
 - fix admin page error on inital call
