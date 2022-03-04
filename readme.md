@@ -14,17 +14,17 @@ License: MIT
 
 ---
 
-Improves ability to work with blocks.
+Improves ability to work with blocks. Visit settings-page `Modules > Adv. Block-Editor`
 
-**Block Reusables Option**
+**Optional: Block Reusables Option**
 - shows **Block-Reusables** below **Appearance** Admin Menu
 - exposes functions `get_block_reusable($title)` and `the_block_reusable($title)` to get a reusable block in templates
 
-**Block Pattern-Manager Option**
+**Optional: Block Pattern-Manager Option**
 - implements Admin UI to create and manage pattern-blocks that can be easily inserted in the block editor
 - shows **Block-Patterns** below **Appearance** Admin Menu.
 
-**Supported Blocks**
+**Optional: Supported Blocks**
 - enable / disable supported blocks from all registered blocks globally
 
 ---
