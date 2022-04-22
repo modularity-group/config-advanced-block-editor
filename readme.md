@@ -2,7 +2,7 @@
 
 This module builds on WordPress and Modularity.
 
-Hide several standard blocks. Enable Block-Reusables and Block-Patterns interface in WP Dashboard. 
+Select the blocks your theme supports. Enable Block-Reusables and Block-Patterns interface in WP Dashboard. 
 
 ---
 
